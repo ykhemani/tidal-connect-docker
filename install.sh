@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Pulling latest image
-echo "Pulling latest image: 'docker pull edgecrush3r/tidal-connect:latest'."
-docker pull edgecrush3r/tidal-connect:latest
+#echo "Pulling latest image: 'docker pull edgecrush3r/tidal-connect:latest'."
+#docker pull edgecrush3r/tidal-connect:latest
 
+echo "Building docker image:"
+cd Docker && ./build_docker.sh && cd ..
 
 # Enable service
 printf "\nEnabling Tidal Service...\n"
