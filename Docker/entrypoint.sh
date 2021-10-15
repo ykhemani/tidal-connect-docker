@@ -7,10 +7,11 @@ echo "Starting Speaker Application in Background (TMUX)"
 echo "Starting TIDAL Connect.."
 /app/ifi-tidal-release/bin/tidal_connect_application \
    --tc-certificate-path "/app/ifi-tidal-release/id_certificate/IfiAudio_ZenStream.dat" \
-   -f "HiFiBerry" \
+   -f "hifipi1" \
+   --playback-device "snd_rpi_hifiberry_digi: HiFiBerry Digi+ Pro HiFi wm8804-spdif-0" \
    --codec-mpegh true \
    --codec-mqa false \
-   --model-name "HiFiBerry" \
+   --model-name "hifipi1" \
    --disable-app-security false \
    --disable-web-security false \
    --enable-mqa-passthrough false \
