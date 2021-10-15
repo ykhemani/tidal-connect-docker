@@ -12,7 +12,7 @@ printf "\nEnabling Tidal Service...\n"
 #cp systemd/tidal.service /etc/systemd/system/
 eval "echo \"$(cat systemd/tidal.service)\"" >/etc/systemd/system/tidal.service
 
-
+systemctl-daemon reload
 systemctl enable tidal.service
 
 # Add Tidal Source to Beocreate
