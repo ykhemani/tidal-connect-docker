@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Building Docker image: edgecrush3r/ifi-tidal-connect"
-cd .. &&  docker build -f Docker/Dockerfile -t edgecrush3r/tidal-connect .
+echo "Building Docker image: ifi-tidal-connect"
+cd .. &&  docker build -f Docker/Dockerfile -t tidal-connect .
 echo "Done..."
